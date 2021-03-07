@@ -1,5 +1,5 @@
 # -Error-R10-Boot-timeout- please edit this code to see it completely
-
+watch my video on youtube : https://www.youtube.com/watch?v=7--PIqUrkYw
 1) check the procfile add code 
  
         web java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
