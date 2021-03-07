@@ -1,8 +1,19 @@
-# -Error-R10-Boot-timeout-
+# -Error-R10-Boot-timeout- please edit this code to see it completely
 
 1) check the procfile add code 
-2) check the AppApplication do everything correctly
-3) pom file add plugin NB: heroku as a plugin for Jar APP and one for WAR app if you have add the plugin for JAR app replace to this 
+ 
+        web java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+        JAVA_TOOL_OPTIONS -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8
+        
+3) check the AppApplication do everything correctly
+Extends app to SpringBootServletInitializer
+add this method
+  @Override
+   protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+      return application.sources(BysAppApplication.class);
+   }
+   
+4) pom file add plugin NB: heroku as a plugin for Jar APP and one for WAR app if you have add the plugin for JAR app replace to this 
      <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
