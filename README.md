@@ -3,7 +3,6 @@
 1) check the procfile add code 
 2) check the AppApplication do everything correctly
 3) pom file add plugin NB: heroku as a plugin for Jar APP and one for WAR app if you have add the plugin for JAR app replace to this 
-4) 
      <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
