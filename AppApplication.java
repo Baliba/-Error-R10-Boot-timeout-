@@ -6,7 +6,7 @@
    public static void main(final String[] args) {
 		SpringApplication.run(BysAppApplication.class, args);
    }
-	  // add this function inthe base of your app 
+	  // add this function in the base of your app 
    @Override
    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
       return application.sources(BysAppApplication.class);
