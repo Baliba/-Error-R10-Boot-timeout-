@@ -12,4 +12,4 @@
       return application.sources(BysAppApplication.class);
    }
 }
-// NB : thos new code will help you to build you app in war package if it was in jar package 
+// NB : those new codes will help you to build you app in war package if it was in jar package 
